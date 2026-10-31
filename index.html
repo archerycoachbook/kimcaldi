@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Kim Çaldı? oyununun gizlilik politikası ve destek sayfası.">
+<title>Kim Çaldı? Gizlilik ve Destek</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Figtree:wght@400;600;700&display=swap">
+<style>
+*{box-sizing:border-box}html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* layout: one readable column; a purple game-style header band, then plain policy text with a compact facts strip */
+:root{
+  --bg:#f6f4fb; --fg:#1f1830; --muted:#5d5670; --line:#ded8ec; --card:#ffffff;
+  --brand:#3a1f6e; --brand2:#5a2a8a; --gold:#ffd23f; --gold-ink:#6b1f08; --ok:#1d8a4b;
+  --display:'Baloo 2', ui-rounded, 'Trebuchet MS', sans-serif;
+  --body:'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#15111f; --fg:#ece8f6; --muted:#a59fb8; --line:#2e2742; --card:#1d1729;
+  --brand:#2a1650; --brand2:#4a2378; --gold:#ffd23f; --gold-ink:#6b1f08; --ok:#4cc27e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#15111f; --fg:#ece8f6; --muted:#a59fb8; --line:#2e2742; --card:#1d1729;
+  --brand:#2a1650; --brand2:#4a2378; --gold:#ffd23f; --gold-ink:#6b1f08; --ok:#4cc27e; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.band{background:linear-gradient(160deg,var(--brand),var(--brand2));color:#fff}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band .wrap{padding-block:28px 26px;display:flex;flex-direction:column;gap:6px}
+.logo{font-family:var(--display);font-weight:800;font-size:clamp(34px,8vw,48px);line-height:1;color:var(--gold);
+  text-shadow:0 2px 0 #b5470f,0 4px 0 var(--gold-ink),2px 0 0 var(--gold-ink),-2px 0 0 var(--gold-ink),0 -2px 0 var(--gold-ink);margin:0}
+.band p{margin:0;opacity:.9}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+nav a{color:#fff;text-decoration:none;font-weight:700;font-size:14px;background:rgba(255,255,255,.14);border-radius:999px;padding:6px 14px}
+nav a:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+main.wrap{padding-block:26px 48px;display:flex;flex-direction:column;gap:30px}
+h2{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.15;margin:0 0 4px;text-wrap:balance;color:var(--fg)}
+h3{font-size:17px;margin:18px 0 4px}
+p,li{max-width:65ch}
+.meta{color:var(--muted);font-size:14px;margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.fact b{font-size:15px}.fact span{font-size:13px;color:var(--muted)}
+.fact b::before{content:"✓ ";color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.mail{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-weight:700}
+.mail code{font-family:var(--body);user-select:all}
+.mail button{border:0;border-radius:8px;background:var(--brand2);color:#fff;font:700 13px var(--body);padding:6px 10px;cursor:pointer}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+details+details{margin-top:8px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:8px 0 2px}
+footer{color:var(--muted);font-size:13px}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <h1 class="logo">Kim Çaldı?</h1>
+    <p>AVM'de hırsız, polis ve ihbar oyunu</p>
+    <nav aria-label="Bölümler"><a href="#gizlilik">Gizlilik Politikası</a><a href="#destek">Destek</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="gizlilik">
+    <h2>Gizlilik Politikası</h2>
+    <p class="meta">Son güncelleme: 31 Ekim 2026 · Geliştirici: Sermet Çınar</p>
+    <p>Kim Çaldı? arkadaşlarla oynanan bir sosyal çıkarım oyunudur. Oyunu oynamak için hesap açmanız gerekmez. Sizden kimlik, e-posta, telefon numarası ya da konum bilgisi istemiyoruz.</p>
+    <div class="facts" role="list">
+      <div class="fact" role="listitem"><b>Hesap yok</b><span>Üyelik ya da giriş gerekmez</span></div>
+      <div class="fact" role="listitem"><b>Reklam yok</b><span>Reklam ağı kullanılmaz</span></div>
+      <div class="fact" role="listitem"><b>Takip yok</b><span>Analitik ya da izleme aracı yok</span></div>
+      <div class="fact" role="listitem"><b>Gerçek para yok</b><span>Oyun içi satın alma yok</span></div>
+    </div>
+
+    <h3>Hangi bilgiler kullanılır?</h3>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Bilgi</th><th>Ne için</th><th>Nerede kalır</th></tr></thead>
+        <tbody>
+          <tr><td>Oyuncu adınız (takma ad)</td><td>Aynı odadaki oyunculara gösterilir</td><td>Oyun sırasında anlık iletilir, sunucuda saklanmaz</td></tr>
+          <tr><td>Oyun içi hamleler (karakterin haritadaki yeri, oylar, seçimler)</td><td>Oyunun herkes için aynı anda işlemesi</td><td>Anlık iletilir, oda kapanınca kaybolur</td></tr>
+          <tr><td>Takma ad, müzik ve ses tercihi</td><td>Bir sonraki açılışta hatırlamak</td><td>Yalnızca kendi cihazınızda</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Çok oyunculu bağlantı</h3>
+    <p>Arkadaşlarla oynarken oyun mesajları, Avrupa Birliği'nde (Frankfurt) çalışan Supabase Realtime hizmeti üzerinden anlık olarak iletilir. Bu mesajlar bir veritabanına kaydedilmez. Hizmet sağlayıcı, bağlantının çalışması ve güvenliği için IP adresi gibi teknik bağlantı kayıtlarını kısa süreli tutabilir. "Botlarla oyna" modunda oyun tamamen cihazınızda çalışır ve oyun verisi gönderilmez.</p>
+
+    <h3>Şansevi ve oyun parası</h3>
+    <p>Oyundaki ₺ tamamen sanaldır. Gerçek parayla satın alınamaz, gerçek paraya ya da ödüle çevrilemez. Şansevi'ndeki şans makineleri yalnızca bu sanal oyun parasıyla oynanır.</p>
+
+    <h3>Çocuklar</h3>
+    <p>Oyun 13 yaş ve üzeri için tasarlanmıştır. 13 yaşından küçük çocuklardan bilerek kişisel bilgi toplamayız.</p>
+
+    <h3>Haklarınız</h3>
+    <p>Sunucularımızda size ait kişisel veri saklanmadığı için silinecek bir hesap ya da kayıt yoktur. Cihazınızdaki tercihleri silmek için uygulamayı kaldırmanız yeterlidir. 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki sorularınız için aşağıdaki adresten bize yazabilirsiniz.</p>
+
+    <h3>Değişiklikler</h3>
+    <p>Bu politika değişirse güncel hâli bu sayfada yayınlanır ve üstteki tarih güncellenir.</p>
+  </section>
+
+  <section id="destek">
+    <h2>Destek</h2>
+    <p>Soru, öneri ya da hata bildirimi için e-posta gönderin:</p>
+    <div class="mail"><span>E-posta:</span><code id="mailAddr">cinarsermet@gmail.com</code><button type="button" id="copyMail">Kopyala</button></div>
+
+    <h3>Sık sorulanlar</h3>
+    <details><summary>Arkadaşlarımla nasıl oynarım?</summary><p>Biriniz “Oda kur”a dokunur ve ekranda çıkan 4 harfli kodu diğerlerine söyler. Diğerleri “Odaya katıl”a dokunup kodu yazar. Kişi azsa odaya bot eklenebilir.</p></details>
+    <details><summary>Oyunda ses gelmiyor.</summary><p>iPhone'un yanındaki sessiz mod düğmesi açıksa oyun ses çıkarmaz. Ana menüdeki Müzik ve Ses düğmelerinin “AÇIK” olduğunu da kontrol edin.</p></details>
+    <details><summary>Oyun ortasında menüye döndüm.</summary><p>Oda sahibinin bağlantısı koparsa ya da oda sahibi oyundan çıkarsa oda kapanır. Yeni bir oda kurup tekrar başlayabilirsiniz.</p></details>
+    <details><summary>Hırsızı nasıl yakalarız?</summary><p>İhbar sayfası belli aralıklarla açılır. En çok oyu alan kişi hırsızsa yakalanır. Polis ve sivil polis kimlik sorarak da hırsız yakalayabilir.</p></details>
+  </section>
+
+  <footer>© 2026 Sermet Çınar · Kim Çaldı?</footer>
+</main>
+
+<script>
+document.getElementById('copyMail').addEventListener('click',function(){
+  var t=document.getElementById('mailAddr').textContent,btn=this;
+  var sel=function(){var r=document.createRange();r.selectNodeContents(document.getElementById('mailAddr'));var s=getSelection();s.removeAllRanges();s.addRange(r);};
+  try{navigator.clipboard.writeText(t).then(function(){btn.textContent='Kopyalandı';setTimeout(function(){btn.textContent='Kopyala'},1500)},sel);}catch(e){sel();}
+});
+</script>
+
+</body>
+</html>
